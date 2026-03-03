@@ -88,7 +88,7 @@ const projects = [
       'One-click CSV export up to 100K rows',
     ],
     github: 'https://github.com/shubham000111222/real-time-sales-dashboard',
-    demo: 'https://github.com/shubham000111222/real-time-sales-dashboard',
+    demo: null,
   },
 ];
 
@@ -172,6 +172,7 @@ function ProjectCard({
         >
           <FaGithub size={16} /> GitHub
         </a>
+        {project.demo && (
         <a
           href={project.demo}
           target="_blank"
@@ -180,6 +181,7 @@ function ProjectCard({
         >
           <FaExternalLinkAlt size={14} /> Live Demo
         </a>
+        )}
       </div>
     </motion.div>
   );
