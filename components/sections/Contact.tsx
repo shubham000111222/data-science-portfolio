@@ -3,8 +3,8 @@
 import { motion } from 'framer-motion';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import { useState } from 'react';
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
-import { HiMail, HiLocationMarker, HiCheckCircle } from 'react-icons/hi';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { HiMail, HiLocationMarker, HiCheckCircle, HiPhone } from 'react-icons/hi';
 
 type FormData = {
   name: string;
@@ -15,27 +15,27 @@ type FormData = {
 
 const contactInfo = [
   {
-    icon: <HiMail className="text-indigo-400" size={22} />,
-    label: 'Email',
-    value: 'your@email.com', // PLACEHOLDER
-    href: 'mailto:your@email.com', // PLACEHOLDER
+    icon: <HiPhone className="text-indigo-400" size={22} />,
+    label: 'Phone',
+    value: '+91 73618 57543',
+    href: 'tel:+917361857543',
   },
   {
     icon: <FaLinkedin className="text-blue-400" size={20} />,
     label: 'LinkedIn',
-    value: 'linkedin.com/in/yourusername', // PLACEHOLDER
-    href: 'https://linkedin.com/in/yourusername', // PLACEHOLDER
+    value: 'linkedin.com/in/shubham-kumar-288b7437b',
+    href: 'https://linkedin.com/in/shubham-kumar-288b7437b',
   },
   {
     icon: <FaGithub className="text-gray-400" size={20} />,
     label: 'GitHub',
-    value: 'github.com/yourusername', // PLACEHOLDER
-    href: 'https://github.com/yourusername', // PLACEHOLDER
+    value: 'github.com/shubham000111222',
+    href: 'https://github.com/shubham000111222',
   },
   {
     icon: <HiLocationMarker className="text-rose-400" size={22} />,
     label: 'Location',
-    value: 'Your City, Country', // PLACEHOLDER
+    value: 'Delhi, India',
     href: null,
   },
 ];
@@ -119,9 +119,8 @@ export function Contact() {
             {/* Social links */}
             <div className="flex items-center gap-4 pt-4">
               {[
-                { icon: <FaGithub size={20} />, href: 'https://github.com/yourusername' },
-                { icon: <FaLinkedin size={20} />, href: 'https://linkedin.com/in/yourusername' },
-                { icon: <FaTwitter size={20} />, href: 'https://twitter.com/yourusername' },
+                { icon: <FaGithub size={20} />, href: 'https://github.com/shubham000111222' },
+                { icon: <FaLinkedin size={20} />, href: 'https://linkedin.com/in/shubham-kumar-288b7437b' },
               ].map((s, i) => (
                 <a
                   key={i}

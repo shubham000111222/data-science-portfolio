@@ -43,12 +43,11 @@ export function Hero() {
             👋 Hello, I&apos;m
           </motion.p>
 
-          {/* PLACEHOLDER: Replace with your full name */}
           <motion.h1
             variants={itemVariants}
             className="text-5xl sm:text-6xl font-extrabold leading-tight text-gray-900 dark:text-white"
           >
-            Your Name
+            Shubham Kumar
           </motion.h1>
 
           <motion.div variants={itemVariants}>
@@ -83,12 +82,11 @@ export function Hero() {
           </motion.div>
 
           <motion.div variants={itemVariants} className="flex items-center gap-4 mt-2">
-            {/* PLACEHOLDER: Replace with your social links */}
-            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer"
+            <a href="https://github.com/shubham000111222" target="_blank" rel="noopener noreferrer"
               className="text-2xl text-gray-500 hover:text-indigo-500 dark:text-gray-400 dark:hover:text-indigo-400 transition-colors">
               <FaGithub />
             </a>
-            <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer"
+            <a href="https://linkedin.com/in/shubham-kumar-288b7437b" target="_blank" rel="noopener noreferrer"
               className="text-2xl text-gray-500 hover:text-indigo-500 dark:text-gray-400 dark:hover:text-indigo-400 transition-colors">
               <FaLinkedin />
             </a>
@@ -111,10 +109,8 @@ export function Hero() {
             />
             {/* Inner glow card */}
             <div className="absolute inset-4 rounded-full glass flex items-center justify-center">
-              {/* PLACEHOLDER: Replace with your profile photo — add /profile.jpg to /public */}
               <div className="w-full h-full rounded-full bg-gradient-to-br from-indigo-500 via-violet-500 to-cyan-500 flex items-center justify-center text-white text-7xl font-bold select-none">
-                {/* PLACEHOLDER: Replace with your initials */}
-                YN
+                SK
               </div>
             </div>
             {/* Floating badges */}

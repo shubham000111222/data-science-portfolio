@@ -1,13 +1,12 @@
 'use client';
 
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { HiMail } from 'react-icons/hi';
 
 const links = [
-  { icon: <FaGithub />, href: 'https://github.com/yourusername', label: 'GitHub' }, // PLACEHOLDER
-  { icon: <FaLinkedin />, href: 'https://linkedin.com/in/yourusername', label: 'LinkedIn' }, // PLACEHOLDER
-  { icon: <FaTwitter />, href: 'https://twitter.com/yourusername', label: 'Twitter' }, // PLACEHOLDER
-  { icon: <HiMail />, href: 'mailto:your@email.com', label: 'Email' }, // PLACEHOLDER
+  { icon: <FaGithub />, href: 'https://github.com/shubham000111222', label: 'GitHub' },
+  { icon: <FaLinkedin />, href: 'https://linkedin.com/in/shubham-kumar-288b7437b', label: 'LinkedIn' },
+  { icon: <HiMail />, href: 'tel:+917361857543', label: 'Phone' },
 ];
 
 export function Footer() {
@@ -15,7 +14,7 @@ export function Footer() {
     <footer className="border-t border-white/10 py-8 mt-16">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
         <p className="text-sm text-gray-500 dark:text-gray-400">
-          © {new Date().getFullYear()} {/* PLACEHOLDER: Your Name */} Your Name. All rights reserved.
+          © {new Date().getFullYear()} Shubham Kumar. All rights reserved.
         </p>
         <div className="flex items-center gap-4">
           {links.map((l) => (

@@ -15,11 +15,10 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-// PLACEHOLDER: Update all metadata with your personal information
 export const metadata: Metadata = {
-  title: "Your Name | Data Scientist & AI Engineer", // PLACEHOLDER
+  title: "Shubham Kumar | Data Scientist & AI Engineer",
   description:
-    "Portfolio of Your Name — Data Scientist, ML Engineer, and AI Enthusiast. Transforming raw data into actionable intelligence through scalable models and data-driven products.", // PLACEHOLDER
+    "Portfolio of Shubham Kumar — Data Scientist, ML Engineer, and AI Enthusiast based in Delhi, India. Transforming raw data into actionable intelligence through scalable models and data-driven products.",
   keywords: [
     "Data Scientist",
     "Machine Learning Engineer",
@@ -29,22 +28,22 @@ export const metadata: Metadata = {
     "Deep Learning",
     "NLP",
     "Portfolio",
+    "Shubham Kumar",
   ],
-  authors: [{ name: "Your Name" }], // PLACEHOLDER
+  authors: [{ name: "Shubham Kumar" }],
   openGraph: {
-    title: "Your Name | Data Scientist & AI Engineer", // PLACEHOLDER
+    title: "Shubham Kumar | Data Scientist & AI Engineer",
     description:
-      "Portfolio of Your Name — Data Scientist and ML Engineer building intelligent, data-driven products.", // PLACEHOLDER
+      "Portfolio of Shubham Kumar — Data Scientist and ML Engineer building intelligent, data-driven products.",
     type: "website",
     locale: "en_US",
-    url: "https://yourportfolio.vercel.app", // PLACEHOLDER
-    siteName: "Your Name Portfolio", // PLACEHOLDER
+    url: "https://shubham-psi-navy.vercel.app",
+    siteName: "Shubham Kumar Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Your Name | Data Scientist & AI Engineer", // PLACEHOLDER
-    description: "Data Scientist and ML Engineer portfolio.", // PLACEHOLDER
-    creator: "@yourtwitterhandle", // PLACEHOLDER
+    title: "Shubham Kumar | Data Scientist & AI Engineer",
+    description: "Data Scientist and ML Engineer portfolio — Shubham Kumar.",
   },
   robots: {
     index: true,
