@@ -6,7 +6,7 @@ import { HiMail } from 'react-icons/hi';
 const links = [
   { icon: <FaGithub />, href: 'https://github.com/shubham000111222', label: 'GitHub' },
   { icon: <FaLinkedin />, href: 'https://linkedin.com/in/shubham-kumar-288b7437b', label: 'LinkedIn' },
-  { icon: <HiMail />, href: 'tel:+917361857543', label: 'Phone' },
+  { icon: <HiMail />, href: 'mailto:yshubham0103@gmail.com', label: 'Email' },
 ];
 
 export function Footer() {

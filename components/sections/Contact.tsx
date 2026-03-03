@@ -15,6 +15,12 @@ type FormData = {
 
 const contactInfo = [
   {
+    icon: <HiMail className="text-indigo-400" size={22} />,
+    label: 'Email',
+    value: 'yshubham0103@gmail.com',
+    href: 'mailto:yshubham0103@gmail.com',
+  },
+  {
     icon: <HiPhone className="text-indigo-400" size={22} />,
     label: 'Phone',
     value: '+91 73618 57543',
