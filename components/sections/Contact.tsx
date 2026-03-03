@@ -158,6 +158,7 @@ export function Contact() {
                     {...register('name', { required: 'Name is required' })}
                     placeholder="John Doe"
                     className="w-full bg-white/5 dark:bg-white/5 border border-white/10 rounded-xl px-4 py-2.5 text-sm text-gray-800 dark:text-gray-200 placeholder-gray-400 focus:outline-none focus:border-indigo-500/50 transition-colors"
+                    suppressHydrationWarning
                   />
                   {errors.name && (
                     <p className="text-xs text-rose-400 mt-1">{errors.name.message}</p>
@@ -175,6 +176,7 @@ export function Contact() {
                     placeholder="john@example.com"
                     type="email"
                     className="w-full bg-white/5 dark:bg-white/5 border border-white/10 rounded-xl px-4 py-2.5 text-sm text-gray-800 dark:text-gray-200 placeholder-gray-400 focus:outline-none focus:border-indigo-500/50 transition-colors"
+                    suppressHydrationWarning
                   />
                   {errors.email && (
                     <p className="text-xs text-rose-400 mt-1">{errors.email.message}</p>
@@ -190,6 +192,7 @@ export function Contact() {
                   {...register('subject', { required: 'Subject is required' })}
                   placeholder="Hiring inquiry / Collaboration / Just saying hi"
                   className="w-full bg-white/5 dark:bg-white/5 border border-white/10 rounded-xl px-4 py-2.5 text-sm text-gray-800 dark:text-gray-200 placeholder-gray-400 focus:outline-none focus:border-indigo-500/50 transition-colors"
+                  suppressHydrationWarning
                 />
                 {errors.subject && (
                   <p className="text-xs text-rose-400 mt-1">{errors.subject.message}</p>
@@ -205,6 +208,7 @@ export function Contact() {
                   rows={5}
                   placeholder="Tell me about your project or opportunity..."
                   className="w-full bg-white/5 dark:bg-white/5 border border-white/10 rounded-xl px-4 py-2.5 text-sm text-gray-800 dark:text-gray-200 placeholder-gray-400 focus:outline-none focus:border-indigo-500/50 transition-colors resize-none"
+                  suppressHydrationWarning
                 />
                 {errors.message && (
                   <p className="text-xs text-rose-400 mt-1">{errors.message.message}</p>
@@ -215,6 +219,7 @@ export function Contact() {
                 type="submit"
                 disabled={isSubmitting}
                 className="w-full py-3 rounded-xl bg-indigo-600 hover:bg-indigo-500 disabled:opacity-60 text-white font-semibold text-sm transition-all shadow-lg shadow-indigo-500/20 hover:shadow-indigo-500/40"
+                suppressHydrationWarning
               >
                 {isSubmitting ? 'Sending...' : 'Send Message'}
               </button>
