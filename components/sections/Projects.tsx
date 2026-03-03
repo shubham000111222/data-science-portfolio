@@ -54,7 +54,7 @@ const projects = [
       'Forecasts generated for 1,200 SKUs weekly',
     ],
     github: 'https://github.com/shubham000111222/demand-forecasting',
-    demo: null,
+    demo: 'https://demand-forecasting-gzyokdmynnlsqdgibsfqwr.streamlit.app/',
   },
   {
     title: 'Multimodal Medical Image Classifier',
