@@ -90,6 +90,23 @@ const projects = [
     github: 'https://github.com/shubham000111222/real-time-sales-dashboard',
     demo: 'https://real-time-sales-dashboard-rxhjichtxwswzwqgn7pncb.streamlit.app/',
   },
+  {
+    title: 'ResumeRank AI — Resume Screening System',
+    emoji: '🎯',
+    problem:
+      'HR teams manually screened hundreds of resumes per role, taking 8+ hours and introducing unconscious bias.',
+    approach:
+      'Built an end-to-end NLP pipeline: PDF/DOCX extraction → NLTK preprocessing → TF-IDF + BERT (all-MiniLM-L6-v2) embeddings → cosine similarity ranking. Added spaCy NER skill extraction against an 80+ skill taxonomy with configurable composite scoring.',
+    stack: ['Python', 'Sentence-Transformers', 'BERT', 'TF-IDF', 'spaCy', 'NLTK', 'Streamlit', 'Docker'],
+    results: [
+      'BERT + TF-IDF ensemble ranking with configurable weights',
+      '80+ skills extracted across 7 categories via NER',
+      'Precision@K, MRR, NDCG@K evaluation metrics',
+      'Skill heatmap, radar chart, and CSV export',
+    ],
+    github: 'https://github.com/shubham000111222/resume-screening',
+    demo: null,
+  },
 ];
 
 function ProjectCard({
