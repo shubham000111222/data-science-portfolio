@@ -3,32 +3,13 @@
 import { motion } from 'framer-motion';
 import { HiExternalLink, HiBadgeCheck } from 'react-icons/hi';
 
-// PLACEHOLDER: Replace with your actual certifications
 const certifications = [
-  {
-    title: 'AWS Certified Machine Learning – Specialty',
-    issuer: 'Amazon Web Services',
-    date: 'Oct 2024',
-    credentialId: 'AWS-ML-XXXXXX', // PLACEHOLDER
-    link: '#', // PLACEHOLDER: Add credential URL
-    badge: '☁️',
-    color: 'from-orange-500/20 to-amber-500/10 border-orange-500/20',
-  },
-  {
-    title: 'TensorFlow Developer Certificate',
-    issuer: 'Google',
-    date: 'Jul 2024',
-    credentialId: 'TF-XXXXXX', // PLACEHOLDER
-    link: '#', // PLACEHOLDER
-    badge: '🧠',
-    color: 'from-blue-500/20 to-cyan-500/10 border-blue-500/20',
-  },
   {
     title: 'Google Data Analytics Professional Certificate',
     issuer: 'Google / Coursera',
     date: 'Mar 2024',
-    credentialId: 'GDAC-XXXXXX', // PLACEHOLDER
-    link: '#', // PLACEHOLDER
+    credentialId: 'GDAC-XXXXXX',
+    link: '#',
     badge: '📊',
     color: 'from-green-500/20 to-teal-500/10 border-green-500/20',
   },
@@ -36,8 +17,8 @@ const certifications = [
     title: 'IBM Data Science Professional Certificate',
     issuer: 'IBM / Coursera',
     date: 'Jan 2024',
-    credentialId: 'IBM-DS-XXXXXX', // PLACEHOLDER
-    link: '#', // PLACEHOLDER
+    credentialId: 'IBM-DS-XXXXXX',
+    link: '#',
     badge: '🔵',
     color: 'from-indigo-500/20 to-violet-500/10 border-indigo-500/20',
   },
@@ -45,19 +26,10 @@ const certifications = [
     title: 'Deep Learning Specialization',
     issuer: 'DeepLearning.AI / Coursera',
     date: 'Sep 2023',
-    credentialId: 'DL-XXXXXX', // PLACEHOLDER
-    link: '#', // PLACEHOLDER
+    credentialId: 'DL-XXXXXX',
+    link: '#',
     badge: '🤖',
     color: 'from-violet-500/20 to-purple-500/10 border-violet-500/20',
-  },
-  {
-    title: 'Microsoft Power BI Data Analyst Associate',
-    issuer: 'Microsoft',
-    date: 'Jun 2023',
-    credentialId: 'PBI-XXXXXX', // PLACEHOLDER
-    link: '#', // PLACEHOLDER
-    badge: '📈',
-    color: 'from-yellow-500/20 to-amber-500/10 border-yellow-500/20',
   },
 ];
 
