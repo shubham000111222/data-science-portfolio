@@ -105,7 +105,7 @@ const projects = [
       'Skill heatmap, radar chart, and CSV export',
     ],
     github: 'https://github.com/shubham000111222/resume-screening',
-    demo: 'https://resume-screening-c85dzvbzkjwqee9pja6ewz.streamlit.app/',
+    demo: 'https://shubh10099-resume-screening.hf.space',
   },
 ];
 
