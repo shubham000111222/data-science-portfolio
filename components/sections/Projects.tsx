@@ -5,7 +5,7 @@ import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
 const projects = [
   {
-    title: 'Customer Churn Prediction Engine',
+    title: 'Telco Customer Churn Prediction Engine',
     emoji: '🔮',
     problem:
       'Telecom customers churn with little warning — retention teams have no way to intervene before it happens.',
@@ -18,8 +18,8 @@ const projects = [
       'SHAP waterfall plots for per-customer explainability',
       'Dockerised and deployable end-to-end',
     ],
-    github: 'https://github.com/shubham000111222/churn-prediction',
-    demo: 'https://churn-prediction-grph4xyczphtcaaqfwdh3d.streamlit.app/',
+    github: 'https://github.com/shubham000111222/telco-churn-prediction',
+    demo: 'https://telco-churn-prediction-kep6cchrmerz8sxcm666ny.streamlit.app/',
   },
   {
     title: 'IPL Analytics (2008–2024)',
@@ -224,14 +224,14 @@ function ProjectCard({
           <FaGithub size={16} /> GitHub
         </a>
         {project.demo && (
-        <a
-          href={project.demo}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-cyan-400 transition-colors"
-        >
-          <FaExternalLinkAlt size={14} /> Live Demo
-        </a>
+          <a
+            href={project.demo}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-cyan-400 transition-colors"
+          >
+            <FaExternalLinkAlt size={14} /> Live Demo
+          </a>
         )}
       </div>
     </motion.div>
