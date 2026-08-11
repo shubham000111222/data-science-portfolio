@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Shubham Kumar — Resume</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Georgia', 'Times New Roman', serif;
+      font-size: 10pt;
+      line-height: 1.38;
+      color: #000;
+      background: #fff;
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 20px 38px 20px;
+    }
+
+    a {
+      color: #000;
+      text-decoration: underline;
+    }
+
+    /* Header */
+    .header {
+      text-align: center;
+      border-bottom: 1.5px solid #000;
+      padding-bottom: 7px;
+      margin-bottom: 7px;
+    }
+
+    .header h1 {
+      font-size: 22pt;
+      font-weight: bold;
+      letter-spacing: 1.5px;
+      font-family: Arial, sans-serif;
+    }
+
+    .header .sub {
+      font-size: 11pt;
+      margin: 2px 0 4px;
+    }
+
+    .contact {
+      font-size: 10pt;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2px 10px;
+    }
+
+    /* Section */
+    .section {
+      margin-top: 10px;
+    }
+
+    .sec-title {
+      font-family: Arial, sans-serif;
+      font-size: 10pt;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      border-bottom: 1px solid #000;
+      padding-bottom: 1px;
+      margin-bottom: 6px;
+    }
+
+    /* Summary */
+    .summary {
+      font-size: 10.5pt;
+    }
+
+    /* Skills */
+    .sk {
+      font-size: 10pt;
+      margin-bottom: 3px;
+    }
+
+    .sk b {
+      font-family: Arial, sans-serif;
+    }
+
+    /* Projects */
+    .proj {
+      margin-bottom: 8px;
+    }
+
+    .ph {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .pt {
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      font-size: 10.5pt;
+    }
+
+    .pl {
+      font-size: 9.5pt;
+    }
+
+    .pl a {
+      margin-left: 8px;
+    }
+
+    .ps {
+      font-size: 9.5pt;
+      font-style: italic;
+      margin: 2px 0 3px;
+    }
+
+    .proj ul {
+      padding-left: 18px;
+    }
+
+    .proj ul li {
+      font-size: 10pt;
+      margin-bottom: 2px;
+    }
+
+    /* Certifications */
+    .cert-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 10pt;
+      margin-bottom: 1px;
+    }
+
+    .cert-date {
+      font-style: italic;
+      white-space: nowrap;
+      margin-left: 8px;
+    }
+
+    @media print {
+      body {
+        padding: 0;
+      }
+
+      @page {
+        size: A4;
+        margin: 0.45in;
+      }
+
+      a {
+        color: #000;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <div class="header">
+    <h1>SHUBHAM KUMAR</h1>
+    <div class="sub">B.Tech Computer Science and Engineering (CSE) &middot; Data Science &amp; AI</div>
+    <div class="contact">
+      <span>Delhi, India</span>
+      <span>|</span>
+      <span><a href="tel:+917361857543">+91 73618 57543</a></span>
+      <span>|</span>
+      <span><a href="mailto:yshubham0103@gmail.com">yshubham0103@gmail.com</a></span>
+      <span>|</span>
+      <span><a href="https://linkedin.com/in/shubham-kumar-288b7437b">linkedin.com/in/shubham-kumar-288b7437b</a></span>
+      <span>|</span>
+      <span><a href="https://github.com/shubham000111222">github.com/shubham000111222</a></span>
+      <span>|</span>
+      <span><a href="https://shubham-psi-navy.vercel.app">Portfolio</a></span>
+    </div>
+  </div>
+
+  <!-- SUMMARY -->
+  <div class="section">
+    <div class="sec-title">Summary</div>
+    <p class="summary">
+      B.Tech Computer Science and Engineering (CSE) student with a strong foundation in Python, backend development, and
+      AI/ML engineering.
+      Experienced in building end-to-end NLP systems, developing REST APIs with FastAPI, and containerizing applications
+      with Docker. Passionate about Generative AI, LLM applications, prompt engineering, and intelligent automation.
+      Seeking to build practical AI solutions that turn prototypes into reliable, user-focused products.
+    </p>
+  </div>
+
+  <!-- TECHNICAL SKILLS -->
+  <div class="section">
+    <div class="sec-title">Technical Skills</div>
+    <div class="sk"><b>Languages &amp; Core:</b> Python, SQL, Git, REST APIs</div>
+    <div class="sk"><b>AI, LLMs &amp; NLP:</b> HuggingFace Transformers, NLP, Prompt Engineering, Generative AI</div>
+    <div class="sk"><b>Backend &amp; Deployment:</b> FastAPI, Docker, PostgreSQL, Streamlit</div>
+    <div class="sk"><b>ML / DL:</b> PyTorch, Scikit-learn, XGBoost, LightGBM</div>
+    <div class="sk"><b>Data &amp; Visualisation:</b> Pandas, NumPy, Matplotlib, Seaborn, Power BI, Plotly</div>
+  </div>
+
+  <!-- PROJECTS -->
+  <div class="section">
+    <div class="sec-title">Projects</div>
+
+    <div class="proj">
+      <div class="ph">
+        <span class="pt">ResumeRank AI &mdash; NLP &amp; Candidate Screening Pipeline</span>
+        <span class="pl">
+          <a href="https://github.com/shubham000111222/resume-screening">GitHub</a>
+          <a href="https://shubh10099-resume-screening.hf.space">Live Demo</a>
+        </span>
+      </div>
+      <div class="ps">Python &middot; BERT &middot; TF-IDF &middot; spaCy &middot; Streamlit &middot; Docker</div>
+      <ul>
+        <li>Engineered an end-to-end NLP pipeline for parsing unstructured documents into structured data and extracting
+          80+ entities using spaCy NER.</li>
+        <li>Evaluated model outputs and continuously refined workflows to ensure high accuracy using Precision@K and
+          NDCG@K metrics.</li>
+        <li>Packaged the application using Docker and deployed it for interactive, real-world usage.</li>
+      </ul>
+    </div>
+
+    <div class="proj">
+      <div class="ph">
+        <span class="pt">Medical Image Classifier API</span>
+        <span class="pl">
+          <a href="https://github.com/shubham000111222/medical-classifier">GitHub</a>
+          <a href="https://medical-classifier-nxsgzc3dekbyqef8kvc8w6.streamlit.app/">Live Demo</a>
+        </span>
+      </div>
+      <div class="ps">PyTorch &middot; FastAPI &middot; Streamlit &middot; REST APIs</div>
+      <ul>
+        <li>Developed a backend REST API using FastAPI to serve deep learning model predictions for Chest X-Ray
+          diagnosis.</li>
+        <li>Fine-tuned EfficientNet-B4 on 112K images, achieving 91.2% accuracy.</li>
+        <li>Connected AI to the real world by integrating the FastAPI backend services with an interactive Streamlit
+          frontend.</li>
+      </ul>
+    </div>
+
+    <div class="proj">
+      <div class="ph">
+        <span class="pt">Customer Churn Prediction &amp; Automation</span>
+        <span class="pl">
+          <a href="https://github.com/shubham000111222/churn-prediction">GitHub</a>
+          <a href="https://churn-prediction-grph4xyczphtcaaqfwdh3d.streamlit.app/">Live Demo</a>
+        </span>
+      </div>
+      <div class="ps">XGBoost &middot; FastAPI &middot; PostgreSQL &middot; Docker &middot; Streamlit</div>
+      <ul>
+        <li>Built and trained an ensemble ML model on a 3M+ row dataset, optimizing for sub-50ms asynchronous inference
+          times.</li>
+        <li>Automated data processing workflows to reduce manual effort and improve operational efficiency.</li>
+        <li>Served real-time predictions via a robust FastAPI REST endpoint and containerized the entire ecosystem with
+          Docker for scalable deployment.</li>
+      </ul>
+    </div>
+
+    <div class="proj">
+      <div class="ph">
+        <span class="pt">Financial Sentiment Analyser (NLP)</span>
+        <span class="pl">
+          <a href="https://github.com/shubham000111222/financial-sentiment">GitHub</a>
+          <a href="https://financial-sentiment-94rstxb2smxghvvjnbj7jp.streamlit.app/">Live Demo</a>
+        </span>
+      </div>
+      <div class="ps">FinBERT &middot; HuggingFace &middot; Airflow &middot; PostgreSQL</div>
+      <ul>
+        <li>Fine-tuned FinBERT (HuggingFace) on 80K financial headlines for accurate sentiment classification.</li>
+        <li>Designed and built automated ETL pipelines (Airflow) connecting external web APIs to a PostgreSQL database
+          for continuous data processing.</li>
+      </ul>
+    </div>
+
+    <div class="proj">
+      <div class="ph">
+        <span class="pt">Retail Demand Forecasting System</span>
+        <span class="pl">
+          <a href="https://github.com/shubham000111222/demand-forecasting">GitHub</a>
+          <a href="https://demand-forecasting-gzyokdmynnlsqdgibsfqwr.streamlit.app/">Live Demo</a>
+        </span>
+      </div>
+      <div class="ps">Python &middot; Prophet &middot; LSTM &middot; Keras &middot; Streamlit &middot; Docker</div>
+      <ul>
+        <li>Built Prophet + LSTM hybrid on Kaggle Store Sales dataset (2.6M rows, 54 stores, 33 product families);
+          reduced MAPE from 22% to 9% vs naive baseline using holiday and promotion regressors.</li>
+        <li>Generated 30-day forecasts with 90% confidence intervals across 1,200 SKUs.</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- COURSEWORK
+  <div class="section">
+    <div class="sec-title">Coursework</div>
+    <div class="sk">Data Structures &amp; Algorithms, Artificial Intelligence, Machine Learning, Database Management
+      Systems, Operating Systems, Linear Algebra &amp; Probability</div>
+  </div>
+  -->
+
+</body>
+
+</html>

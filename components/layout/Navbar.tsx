@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ThemeToggle } from '@/components/ui/ThemeToggle';
+import { ResumeDropdown } from '@/components/ui/ResumeDropdown';
 import { HiMenuAlt3, HiX } from 'react-icons/hi';
 
 const navLinks = [
@@ -53,13 +54,9 @@ export function Navbar() {
             </a>
           ))}
           <ThemeToggle />
-          <a
-            href="/resume.pdf"
-            download
-            className="px-4 py-1.5 text-sm font-semibold rounded-full bg-indigo-600 hover:bg-indigo-500 text-white transition-colors"
-          >
+          <ResumeDropdown className="px-4 py-1.5 text-sm font-semibold rounded-full bg-indigo-600 hover:bg-indigo-500 text-white transition-colors">
             Resume
-          </a>
+          </ResumeDropdown>
         </nav>
 
         {/* Mobile Nav Toggle */}
@@ -96,13 +93,9 @@ export function Navbar() {
                   {link.label}
                 </a>
               ))}
-              <a
-                href="/resume.pdf"
-                download
-                className="px-4 py-2 text-sm font-semibold rounded-full bg-indigo-600 hover:bg-indigo-500 text-white text-center"
-              >
+              <ResumeDropdown className="w-full px-4 py-2 text-sm font-semibold rounded-full bg-indigo-600 hover:bg-indigo-500 text-white flex items-center justify-center">
                 Download Resume
-              </a>
+              </ResumeDropdown>
             </div>
           </motion.div>
         )}

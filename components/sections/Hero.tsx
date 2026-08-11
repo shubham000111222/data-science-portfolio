@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import type { Variants } from 'framer-motion';
 import { HiDownload, HiArrowRight } from 'react-icons/hi';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { ResumeDropdown } from '@/components/ui/ResumeDropdown';
 
 const containerVariants: Variants = {
   hidden: {},
@@ -66,13 +67,12 @@ export function Hero() {
           </motion.p>
 
           <motion.div variants={itemVariants} className="flex flex-wrap gap-4 mt-2">
-            <a
-              href="/resume.pdf"
-              download
+            <ResumeDropdown
               className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-indigo-600 hover:bg-indigo-500 text-white font-semibold shadow-lg shadow-indigo-500/25 transition-all hover:shadow-indigo-500/40 hover:-translate-y-0.5"
+              menuPosition="bottom-left"
             >
               <HiDownload size={18} /> Download Resume
-            </a>
+            </ResumeDropdown>
             <a
               href="#contact"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-full glass text-gray-800 dark:text-white font-semibold border border-white/20 hover:border-indigo-400/50 transition-all hover:-translate-y-0.5"
