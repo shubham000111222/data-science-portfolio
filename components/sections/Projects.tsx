@@ -70,7 +70,7 @@ const projects = [
       'External regressors (holidays, promotions) improve accuracy',
     ],
     github: 'https://github.com/shubham000111222/demand-forecasting',
-    demo: 'https://demand-forecasting-gzyokdmynnlsqdgibsfqwr.streamlit.app/',
+    demo: 'https://demand-forecasting-gwtanbwch4vydbnexsccxh.streamlit.app/',
   },
   {
     title: 'Multimodal Medical Image Classifier',
