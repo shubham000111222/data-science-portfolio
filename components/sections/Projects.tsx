@@ -19,7 +19,7 @@ const projects = [
       'Dockerised and deployable end-to-end',
     ],
     github: 'https://github.com/shubham000111222/telco-churn-prediction',
-    demo: 'https://telco-churn-prediction-kep6cchrmerz8sxcm666ny.streamlit.app/',
+    demo: 'https://telco-churn-prediction-nzpu7s6k2r6mspjzcbahj9.streamlit.app/',
   },
   {
     title: 'IPL Analytics (2008–2024)',
