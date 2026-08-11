@@ -36,6 +36,7 @@ const projects = [
       '✓ 8-page Streamlit dashboard: player comparison, match simulator, rivalry deep-dive',
     ],
     github: 'https://github.com/shubham000111222/IPL-analytics',
+    demo: 'https://ipl-analytics-btw4n5hcm5n6q8whulymxe.streamlit.app',
   },
   {
     title: 'NLP-Powered Financial Sentiment Analyser',
