@@ -172,6 +172,7 @@ const projects = [
       'Used SHAP TreeExplainer for per-customer reason codes',
     ],
     github: 'https://github.com/shubham000111222/saas-churn-prediction',
+    demo: 'https://churn-prediction-grph4xyczphtcaaqfwdh3d.streamlit.app/',
   },
   {
     title: 'Real-Time Cricket Analytics Dashboard',
