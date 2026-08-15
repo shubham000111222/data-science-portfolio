@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Shubham Kumar — Resume</title>
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
     body {
       font-family: 'Georgia', 'Times New Roman', serif;
@@ -18,7 +23,10 @@
       padding: 20px 38px 20px;
     }
 
-    a { color: #000; text-decoration: underline; }
+    a {
+      color: #000;
+      text-decoration: underline;
+    }
 
     /* HEADER */
     .header {
@@ -27,13 +35,19 @@
       padding-bottom: 6px;
       margin-bottom: 7px;
     }
+
     .header h1 {
       font-family: Arial, sans-serif;
       font-size: 20pt;
       font-weight: bold;
       letter-spacing: 1.5px;
     }
-    .header .sub { font-size: 10pt; margin: 2px 0 4px; }
+
+    .header .sub {
+      font-size: 10pt;
+      margin: 2px 0 4px;
+    }
+
     .contact {
       font-size: 9pt;
       display: flex;
@@ -43,7 +57,10 @@
     }
 
     /* SECTION */
-    .section { margin-top: 6px; }
+    .section {
+      margin-top: 6px;
+    }
+
     .sec-title {
       font-family: Arial, sans-serif;
       font-size: 9pt;
@@ -56,108 +73,205 @@
     }
 
     /* SUMMARY */
-    .summary { font-size: 9.5pt; line-height: 1.45; }
+    .summary {
+      font-size: 9.5pt;
+      line-height: 1.45;
+    }
 
     /* EDUCATION */
-    .edu-row { display: flex; justify-content: space-between; align-items: baseline; gap: 6px; }
-    .edu-left .inst { font-family: Arial, sans-serif; font-weight: bold; font-size: 10pt; }
-    .edu-left .deg  { font-size: 9pt; font-style: italic; color: #222; }
-    .edu-right      { font-size: 9pt; white-space: nowrap; text-align: right; flex-shrink: 0; }
+    .edu-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 6px;
+    }
+
+    .edu-left .inst {
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      font-size: 10pt;
+    }
+
+    .edu-left .deg {
+      font-size: 9pt;
+      font-style: italic;
+      color: #222;
+    }
+
+    .edu-right {
+      font-size: 9pt;
+      white-space: nowrap;
+      text-align: right;
+      flex-shrink: 0;
+    }
 
     /* SKILLS */
-    .sk { font-size: 9.5pt; margin-bottom: 2px; }
-    .sk b { font-family: Arial, sans-serif; }
+    .sk {
+      font-size: 9.5pt;
+      margin-bottom: 2px;
+    }
+
+    .sk b {
+      font-family: Arial, sans-serif;
+    }
 
     /* PROJECTS */
-    .proj { margin-bottom: 5px; }
-    .ph { display: flex; justify-content: space-between; align-items: baseline; }
-    .pt { font-family: Arial, sans-serif; font-weight: bold; font-size: 9.5pt; }
-    .pl { font-size: 9pt; white-space: nowrap; margin-left: 8px; flex-shrink: 0; }
-    .pl a { margin-left: 5px; }
-    .ps { font-size: 9pt; font-style: italic; margin: 0 0 2px; color: #222; }
-    .proj ul { padding-left: 14px; }
-    .proj ul li { font-size: 9.5pt; line-height: 1.38; }
+    .proj {
+      margin-bottom: 5px;
+    }
+
+    .ph {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .pt {
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      font-size: 9.5pt;
+    }
+
+    .pl {
+      font-size: 9pt;
+      white-space: nowrap;
+      margin-left: 8px;
+      flex-shrink: 0;
+    }
+
+    .pl a {
+      margin-left: 5px;
+    }
+
+    .ps {
+      font-size: 9pt;
+      font-style: italic;
+      margin: 0 0 2px;
+      color: #222;
+    }
+
+    .proj ul {
+      padding-left: 14px;
+    }
+
+    .proj ul li {
+      font-size: 9.5pt;
+      line-height: 1.38;
+    }
 
     /* CERTIFICATIONS */
-    .cert-row { display: flex; justify-content: space-between; font-size: 9.5pt; margin-bottom: 2px; }
-    .cert-date { font-style: italic; white-space: nowrap; margin-left: 8px; flex-shrink: 0; }
+    .cert-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 9.5pt;
+      margin-bottom: 2px;
+    }
+
+    .cert-date {
+      font-style: italic;
+      white-space: nowrap;
+      margin-left: 8px;
+      flex-shrink: 0;
+    }
 
     @media print {
-      body { padding: 0; max-width: 100%; }
-      @page { size: A4; margin: 0.4in 0.45in; }
-      a { color: #000; }
+      body {
+        padding: 0;
+        max-width: 100%;
+      }
+
+      @page {
+        size: A4;
+        margin: 0.4in 0.45in;
+      }
+
+      a {
+        color: #000;
+      }
     }
   </style>
 </head>
+
 <body>
 
-<!-- HEADER -->
-<div class="header">
-  <h1>SHUBHAM KUMAR</h1>
-  <div class="sub">B.Tech Computer Science &middot; Data Science &amp; AI</div>
-  <div class="contact">
-    <span>Delhi, India</span>
-    <span>|</span>
-    <span><a href="tel:+917361857543">+91 73618 57543</a></span>
-    <span>|</span>
-    <span><a href="mailto:yshubham0103@gmail.com">yshubham0103@gmail.com</a></span>
-    <span>|</span>
-    <span><a href="https://linkedin.com/in/shubham-kumar-288b7437b">linkedin.com/in/shubham-kumar-288b7437b</a></span>
-    <span>|</span>
-    <span><a href="https://github.com/shubham000111222">github.com/shubham000111222</a></span>
-    <span>|</span>
-    <span><a href="https://data-science-portfolio-three-olive.vercel.app">Portfolio</a></span>
-  </div>
-</div>
-
-<!-- SUMMARY -->
-<div class="section">
-  <div class="sec-title">Summary</div>
-  <p class="summary">B.Tech CS student at NIT Delhi (2023–27) with hands-on experience building end-to-end ML pipelines, SQL analytics systems, and NLP applications across telecom, finance, and sports domains. Proficient in Python, SQL, XGBoost, LightGBM, and Streamlit. All projects use real public datasets with honest, verifiable metrics. Seeking a Data Science or Data Analytics internship.</p>
-</div>
-
-<!-- EDUCATION -->
-<div class="section">
-  <div class="sec-title">Education</div>
-  <div class="edu-row">
-    <div class="edu-left">
-      <div class="inst">National Institute of Technology Delhi (NIT Delhi)</div>
-      <div class="deg">B.Tech in Computer Science &amp; Engineering</div>
+  <!-- HEADER -->
+  <div class="header">
+    <h1>SHUBHAM KUMAR</h1>
+    <div class="sub">B.Tech Computer Science &middot; Data Science &amp; AI</div>
+    <div class="contact">
+      <span>Delhi, India</span>
+      <span>|</span>
+      <span><a href="tel:+917361857543">+91 73618 57543</a></span>
+      <span>|</span>
+      <span><a href="mailto:yshubham0103@gmail.com">yshubham0103@gmail.com</a></span>
+      <span>|</span>
+      <span><a href="https://linkedin.com/in/shubham-kumar-288b7437b">linkedin.com/in/shubham-kumar-288b7437b</a></span>
+      <span>|</span>
+      <span><a href="https://github.com/shubham000111222">github.com/shubham000111222</a></span>
+      <span>|</span>
+      <span><a href="https://data-science-portfolio-three-olive.vercel.app">Portfolio</a></span>
     </div>
-    <div class="edu-right">Delhi, India &nbsp;|&nbsp; 2023 &ndash; 2027</div>
   </div>
-</div>
 
-<!-- TECHNICAL SKILLS -->
-<div class="section">
-  <div class="sec-title">Technical Skills</div>
-  <div class="sk"><b>Languages:</b> Python, SQL</div>
-  <div class="sk"><b>ML / DL:</b> Scikit-learn, XGBoost, LightGBM, PyTorch, Keras, SHAP, EfficientNet</div>
-  <div class="sk"><b>NLP &amp; LLMs:</b> HuggingFace Transformers, FinBERT, spaCy, NLTK</div>
-  <div class="sk"><b>Data Stack:</b> Pandas, NumPy, SQLite</div>
-  <div class="sk"><b>Visualisation:</b> Streamlit, Plotly, Seaborn, Matplotlib</div>
-  <div class="sk"><b>MLOps &amp; Deployment:</b> Docker, FastAPI, PostgreSQL, Streamlit Cloud, HuggingFace Spaces, Vercel</div>
-</div>
+  <!-- SUMMARY -->
+  <div class="section">
+    <div class="sec-title">Summary</div>
+    <p class="summary">B.Tech CS student at NIT Delhi (2023–27) with hands-on experience in data analytics and
+      performing data-driven analytics to generate actionable business insights. Proficient in Python, SQL, and Advanced
+      MS Excel, with strong expertise in statistical techniques, data mining, and text mining. Adept at developing and
+      maintaining dashboards to track key business metrics, evaluating business processes, and implementing solutions to
+      increase business effectiveness. Seeking a Business Analyst or Data Analytics internship to support fact-based
+      decision-making.</p>
+  </div>
 
-<!-- PROJECTS -->
-<div class="section">
-  <div class="sec-title">Projects</div>
-
-  <div class="proj">
-    <div class="ph">
-      <span class="pt">IPL Analytics (2008&ndash;2024) &mdash; End-to-End Cricket Analytics</span>
-      <span class="pl">
-        <a href="https://github.com/shubham000111222/IPL-analytics">GitHub</a>
-        <a href="https://ipl-analytics-btw4n5hcm5n6q8whulymxe.streamlit.app/">Live Demo</a>
-      </span>
+  <!-- EDUCATION -->
+  <div class="section">
+    <div class="sec-title">Education</div>
+    <div class="edu-row">
+      <div class="edu-left">
+        <div class="inst">National Institute of Technology Delhi (NIT Delhi)</div>
+        <div class="deg">B.Tech in Computer Science &amp; Engineering</div>
+      </div>
+      <div class="edu-right">Delhi, India &nbsp;|&nbsp; 2023 &ndash; 2027</div>
     </div>
-    <div class="ps">Python &middot; SQL (SQLite) &middot; Pandas &middot; Scikit-learn &middot; Matplotlib &middot; Seaborn &middot; Streamlit</div>
-    <ul>
-      <li>Analysed 300K+ ball-by-ball IPL deliveries using 20+ SQL window function queries (CTEs, ROW_NUMBER, LAG) across batting, bowling, and team strategy. Built KMeans clustering to classify batsmen as Anchors vs Aggressors; logistic regression win-probability model (64.7% accuracy); 20 publication-quality visualisations including SHAP-style matchup heatmaps and phase-wise strike rate analysis. 8-page Streamlit dashboard with match simulator and rivalry deep-dive.</li>
-    </ul>
   </div>
 
-  <!--
+  <!-- TECHNICAL SKILLS -->
+  <div class="section">
+    <div class="sec-title">Technical Skills</div>
+    <div class="sk"><b>Languages:</b> Python, SQL</div>
+    <div class="sk"><b>ML / DL:</b> Scikit-learn, XGBoost, LightGBM, PyTorch, Keras, SHAP, EfficientNet</div>
+    <div class="sk"><b>NLP &amp; LLMs:</b> HuggingFace Transformers, FinBERT, spaCy, NLTK</div>
+    <div class="sk"><b>Data Stack:</b> Pandas, NumPy, SQLite, Microsoft Excel</div>
+    <div class="sk"><b>Visualisation:</b> Streamlit, Plotly, Seaborn, Matplotlib, Power BI</div>
+    <div class="sk"><b>MLOps &amp; Deployment:</b> Docker, FastAPI, PostgreSQL, Streamlit Cloud, HuggingFace Spaces,
+      Vercel</div>
+  </div>
+
+  <!-- PROJECTS -->
+  <div class="section">
+    <div class="sec-title">Projects</div>
+
+    <div class="proj">
+      <div class="ph">
+        <span class="pt">IPL Analytics (2008&ndash;2024) &mdash; End-to-End Cricket Analytics</span>
+        <span class="pl">
+          <a href="https://github.com/shubham000111222/IPL-analytics">GitHub</a>
+          <a href="https://ipl-analytics-btw4n5hcm5n6q8whulymxe.streamlit.app/">Live Demo</a>
+        </span>
+      </div>
+      <div class="ps">Python &middot; SQL (SQLite) &middot; Pandas &middot; Scikit-learn &middot; Matplotlib &middot;
+        Seaborn &middot; Streamlit</div>
+      <ul>
+        <li>Analysed 300K+ ball-by-ball IPL deliveries using 20+ SQL window function queries (CTEs, ROW_NUMBER, LAG)
+          across batting, bowling, and team strategy. Built KMeans clustering to classify batsmen as Anchors vs
+          Aggressors; logistic regression win-probability model (64.7% accuracy); 20 publication-quality visualisations
+          including SHAP-style matchup heatmaps and phase-wise strike rate analysis. 8-page Streamlit dashboard with
+          match simulator and rivalry deep-dive.</li>
+      </ul>
+    </div>
+
+    <!--
   <div class="proj">
     <div class="ph">
       <span class="pt">ResumeRank AI &mdash; Resume Screening &amp; Candidate Ranking</span>
@@ -170,57 +284,74 @@
   </div>
   -->
 
-  <div class="proj">
-    <div class="ph">
-      <span class="pt">Telco Customer Churn Prediction Engine</span>
-      <span class="pl"><a href="https://github.com/shubham000111222/telco-churn-prediction">GitHub</a> <a href="https://telco-churn-prediction-nzpu7s6k2r6mspjzcbahj9.streamlit.app/">Live Demo</a></span>
+    <div class="proj">
+      <div class="ph">
+        <span class="pt">Telco Customer Churn Prediction Engine</span>
+        <span class="pl"><a href="https://github.com/shubham000111222/telco-churn-prediction">GitHub</a> <a
+            href="https://telco-churn-prediction-nzpu7s6k2r6mspjzcbahj9.streamlit.app/">Live Demo</a></span>
+      </div>
+      <div class="ps">Python &middot; XGBoost &middot; LightGBM &middot; SHAP &middot; FastAPI &middot; Streamlit
+        &middot; Docker</div>
+      <ul>
+        <li>Trained XGBoost + LightGBM ensemble on IBM Telco Customer Churn dataset (7,043 real records); achieved
+          ROC-AUC 0.717 with threshold-tuned recall of 64.2% on held-out test set. Applied SMOTE for class imbalance,
+          SHAP TreeExplainer for per-customer reason codes, served via FastAPI (&lt;50ms).</li>
+      </ul>
     </div>
-    <div class="ps">Python &middot; XGBoost &middot; LightGBM &middot; SHAP &middot; FastAPI &middot; Streamlit &middot; Docker</div>
-    <ul>
-      <li>Trained XGBoost + LightGBM ensemble on IBM Telco Customer Churn dataset (7,043 real records); achieved ROC-AUC 0.717 with threshold-tuned recall of 64.2% on held-out test set. Applied SMOTE for class imbalance, SHAP TreeExplainer for per-customer reason codes, served via FastAPI (&lt;50ms).</li>
-    </ul>
+
+    <div class="proj">
+      <div class="ph">
+        <span class="pt">Retail Demand Forecasting System</span>
+        <span class="pl"><a href="https://github.com/shubham000111222/demand-forecasting">GitHub</a> <a
+            href="https://demand-forecasting-gwtanbwch4vydbnexsccxh.streamlit.app/">Live Demo</a></span>
+      </div>
+      <div class="ps">Python &middot; Prophet &middot; LSTM &middot; Keras &middot; Streamlit &middot; Docker</div>
+      <ul>
+        <li>Built Prophet + LSTM hybrid on Kaggle Store Sales dataset (2.6M rows, 54 stores, 33 product families);
+          reduced MAPE from 22% to 9% vs naive baseline using holiday and promotion regressors. Generated 30-day
+          forecasts with 90% confidence intervals across 1,200 SKUs.</li>
+      </ul>
+    </div>
+
+    <div class="proj">
+      <div class="ph">
+        <span class="pt">Real-Time Sales Analytics Dashboard</span>
+        <span class="pl"><a href="https://github.com/shubham000111222/real-time-sales-dashboard">GitHub</a> <a
+            href="https://real-time-sales-dashboard-rxhjichtxwswzwqgn7pncb.streamlit.app/">Live Demo</a></span>
+      </div>
+      <div class="ps">Python &middot; PostgreSQL &middot; FastAPI &middot; Streamlit &middot; Docker &middot; Prophet
+        &middot; ARIMA</div>
+      <ul>
+        <li>Engineered a live data pipeline and PostgreSQL data warehouse to process 500K+ historical and continuous
+          sales records. Built an interactive Streamlit dashboard for real-time tracking of key business metrics.
+          Applied statistical techniques (Prophet, ARIMA) for robust sales forecasting to drive fact-based
+          decision-making.</li>
+      </ul>
+    </div>
+
+    <div class="proj">
+      <div class="ph">
+        <span class="pt">NLP Financial Sentiment Analyser</span>
+        <span class="pl"><a href="https://github.com/shubham000111222/financial-sentiment">GitHub</a> <a
+            href="https://financial-sentiment-94rstxb2smxghvvjnbj7jp.streamlit.app/">Live Demo</a></span>
+      </div>
+      <div class="ps">Python &middot; FinBERT &middot; HuggingFace Transformers &middot; Streamlit</div>
+      <ul>
+        <li>Fine-tuned FinBERT (HuggingFace) on Financial PhraseBank dataset; achieved 87.3% accuracy and 0.86 macro F1
+          across bullish/bearish/neutral classes. Built automated ETL pipeline (NewsAPI &rarr; sentiment scoring) and
+          live Streamlit dashboard tracking sentiment trends across 500+ tickers.</li>
+      </ul>
+    </div>
+
   </div>
 
-  <div class="proj">
-    <div class="ph">
-      <span class="pt">NLP Financial Sentiment Analyser</span>
-      <span class="pl"><a href="https://github.com/shubham000111222/financial-sentiment">GitHub</a> <a href="https://financial-sentiment-94rstxb2smxghvvjnbj7jp.streamlit.app/">Live Demo</a></span>
-    </div>
-    <div class="ps">Python &middot; FinBERT &middot; HuggingFace Transformers &middot; Streamlit</div>
-    <ul>
-      <li>Fine-tuned FinBERT (HuggingFace) on Financial PhraseBank dataset; achieved 87.3% accuracy and 0.86 macro F1 across bullish/bearish/neutral classes. Built automated ETL pipeline (NewsAPI &rarr; sentiment scoring) and live Streamlit dashboard tracking sentiment trends across 500+ tickers.</li>
-    </ul>
+  <!-- RELEVANT COURSEWORK -->
+  <div class="section">
+    <div class="sec-title">Relevant Coursework</div>
+    <div class="sk">Data Structures &amp; Algorithms &middot; Database Management Systems &middot; Probability &amp;
+      Statistics &middot; Linear Algebra &middot; Operating Systems &middot; Computer Networks</div>
   </div>
-
-  <div class="proj">
-    <div class="ph">
-      <span class="pt">Retail Demand Forecasting System</span>
-      <span class="pl"><a href="https://github.com/shubham000111222/demand-forecasting">GitHub</a> <a href="https://demand-forecasting-gwtanbwch4vydbnexsccxh.streamlit.app/">Live Demo</a></span>
-    </div>
-    <div class="ps">Python &middot; Prophet &middot; LSTM &middot; Keras &middot; Streamlit &middot; Docker</div>
-    <ul>
-      <li>Built Prophet + LSTM hybrid on Kaggle Store Sales dataset (2.6M rows, 54 stores, 33 product families); reduced MAPE from 22% to 9% vs naive baseline using holiday and promotion regressors. Generated 30-day forecasts with 90% confidence intervals across 1,200 SKUs.</li>
-    </ul>
-  </div>
-
-  <div class="proj">
-    <div class="ph">
-      <span class="pt">Medical Image Classifier &mdash; Chest X-Ray Diagnosis</span>
-      <span class="pl"><a href="https://github.com/shubham000111222/medical-classifier">GitHub</a> <a href="https://medical-classifier-nxsgzc3dekbyqef8kvc8w6.streamlit.app/">Live Demo</a></span>
-    </div>
-    <div class="ps">Python &middot; PyTorch &middot; EfficientNet-B4 &middot; Grad-CAM &middot; FastAPI &middot; Streamlit</div>
-    <ul>
-      <li>Fine-tuned EfficientNet-B4 on NIH ChestX-ray14 (112K images); achieved 91.2% accuracy across 14 pathology classes. Applied Grad-CAM for visual explainability; deployed via FastAPI + Streamlit.</li>
-    </ul>
-  </div>
-
-</div>
-
-<!-- RELEVANT COURSEWORK -->
-<div class="section">
-  <div class="sec-title">Relevant Coursework</div>
-  <div class="sk">Data Structures &amp; Algorithms &middot; Database Management Systems &middot; Probability &amp; Statistics &middot; Linear Algebra &middot; Operating Systems &middot; Computer Networks</div>
-</div>
 
 </body>
+
 </html>
