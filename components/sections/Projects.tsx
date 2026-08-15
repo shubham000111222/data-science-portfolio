@@ -174,22 +174,6 @@ const projects = [
     github: 'https://github.com/shubham000111222/saas-churn-prediction',
     demo: 'https://churn-prediction-grph4xyczphtcaaqfwdh3d.streamlit.app/',
   },
-  {
-    title: 'Real-Time Cricket Analytics Dashboard',
-    emoji: '🏏',
-    problem:
-      'Cricket fans and analysts often lack accessible real-time dashboards with ball-by-ball simulated models and rich visualizations.',
-    approach:
-      'Built a live IPL/cricket match analytics dashboard with ball-by-ball simulation using a Logistic Regression win-probability model updated live from a CricAPI stream.',
-    stack: ['Python', 'Streamlit', 'Docker', 'Logistic Regression', 'Plotly'],
-    results: [
-      'Event-driven data pipeline integrating real-time CricAPI streaming',
-      'Modular ML model trained on 3,000 synthetic IPL innings',
-      '7+ real-time interactive chart types (batting worm, wagon wheel)',
-      'Deployed full app using Docker and Streamlit',
-    ],
-    github: 'https://github.com/shubham000111222/cricket-analytics',
-  },
 ];
 
 function ProjectCard({
