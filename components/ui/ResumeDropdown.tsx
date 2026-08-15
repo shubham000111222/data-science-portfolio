@@ -13,7 +13,6 @@ interface ResumeDropdownProps {
 const resumeOptions = [
   { label: 'Data Science & Analytics', href: '/resume.pdf' },
   { label: 'Applied AI Engineering', href: '/resume_ai.pdf' },
-  { label: 'Data Analyst', href: '/resume_analyst.pdf' },
 ];
 
 export function ResumeDropdown({ children, className, menuPosition = 'bottom-right' }: ResumeDropdownProps) {
