@@ -5,6 +5,23 @@ import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
 const projects = [
   {
+    title: 'Stock Portfolio Analytics Dashboard',
+    emoji: '📈',
+    problem:
+      'Evaluating multi-asset portfolios requires combining risk metrics, benchmark comparisons, and factor exposures — often needing expensive enterprise tools.',
+    approach:
+      'Engineered an interactive analytics dashboard fetching real-time market data via Yahoo Finance. Implemented rolling volatility, drawdown analysis, and Fama-French style factor beta regressions to evaluate asset contributions.',
+    stack: ['Python', 'Streamlit', 'Pandas', 'Plotly', 'yfinance'],
+    results: [
+      'Real-time portfolio evaluation against configurable benchmarks (SPY, QQQ)',
+      'Automated generation of PDF performance tear sheets',
+      'Interactive monthly return heatmaps and drawdown curves',
+      'Graceful error handling for API rate limits and missing data',
+    ],
+    github: 'https://github.com/shubham000111222/stock-portfolio-analytics',
+    demo: 'https://stock-portfolio-analytics-5ustsrbxfa4aqzcmnehqwt.streamlit.app/',
+  },
+  {
     title: 'Telco Customer Churn Prediction Engine',
     emoji: '🔮',
     problem:
