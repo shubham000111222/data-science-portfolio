@@ -87,7 +87,7 @@ export function About() {
 
             <div className="pt-4 grid grid-cols-2 gap-4">
               {[
-                { label: 'Projects', value: '9' },
+                { label: 'Projects', value: '11' },
                 { label: 'Certifications', value: '2' },
               ].map((stat) => (
                 <div key={stat.label} className="glass rounded-xl p-4 text-center">

@@ -157,6 +157,38 @@ const projects = [
     github: 'https://github.com/shubham000111222/ai-mock-interviewer',
     demo: 'https://shubh10099-ai-mock-interviewer.hf.space',
   },
+  {
+    title: 'SaaS Customer Churn Prediction Engine',
+    emoji: '🏢',
+    problem:
+      'A SaaS company was losing 12% of customers monthly with no early-warning system, putting ~$1.2M annual revenue at risk.',
+    approach:
+      'Engineered an end-to-end ML system on 3M+ transaction records using RFM scoring and behavioural telemetry. Built an XGBoost + LightGBM ensemble tuned with Optuna and served via FastAPI.',
+    stack: ['Python', 'XGBoost', 'LightGBM', 'FastAPI', 'MLflow', 'Docker', 'SHAP'],
+    results: [
+      'ROC-AUC of 0.94 and Precision of 0.89 on test set',
+      'Inference latency < 50ms via FastAPI with Redis caching',
+      'Protected ~$1.2M annual revenue by identifying churners 30 days in advance',
+      'Used SHAP TreeExplainer for per-customer reason codes',
+    ],
+    github: 'https://github.com/shubham000111222/saas-churn-prediction',
+  },
+  {
+    title: 'Real-Time Cricket Analytics Dashboard',
+    emoji: '🏏',
+    problem:
+      'Cricket fans and analysts often lack accessible real-time dashboards with ball-by-ball simulated models and rich visualizations.',
+    approach:
+      'Built a live IPL/cricket match analytics dashboard with ball-by-ball simulation using a Logistic Regression win-probability model updated live from a CricAPI stream.',
+    stack: ['Python', 'Streamlit', 'Docker', 'Logistic Regression', 'Plotly'],
+    results: [
+      'Event-driven data pipeline integrating real-time CricAPI streaming',
+      'Modular ML model trained on 3,000 synthetic IPL innings',
+      '7+ real-time interactive chart types (batting worm, wagon wheel)',
+      'Deployed full app using Docker and Streamlit',
+    ],
+    github: 'https://github.com/shubham000111222/cricket-analytics',
+  },
 ];
 
 function ProjectCard({
