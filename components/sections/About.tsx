@@ -19,11 +19,11 @@ const skillCategories = [
   },
   {
     title: '📊 Data Stack',
-    skills: ['Pandas', 'NumPy', 'SQLite'],
+    skills: ['Pandas', 'NumPy', 'SQLite', 'Microsoft Excel'],
   },
   {
     title: '📈 Visualisation',
-    skills: ['Streamlit', 'Plotly', 'Seaborn', 'Matplotlib'],
+    skills: ['Streamlit', 'Plotly', 'Seaborn', 'Matplotlib', 'Power BI'],
   },
   {
     title: '🛠 MLOps & Deployment',
@@ -87,7 +87,7 @@ export function About() {
 
             <div className="pt-4 grid grid-cols-2 gap-4">
               {[
-                { label: 'Projects', value: '8' },
+                { label: 'Projects', value: '9' },
                 { label: 'Certifications', value: '2' },
               ].map((stat) => (
                 <div key={stat.label} className="glass rounded-xl p-4 text-center">

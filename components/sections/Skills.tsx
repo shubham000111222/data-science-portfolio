@@ -17,8 +17,8 @@ const toolBadges = [
   { category: 'Languages', items: ['Python', 'SQL'] },
   { category: 'ML / DL', items: ['Scikit-learn', 'XGBoost', 'LightGBM', 'PyTorch', 'Keras', 'SHAP', 'EfficientNet'] },
   { category: 'NLP & LLMs', items: ['HuggingFace Transformers', 'FinBERT', 'spaCy', 'NLTK'] },
-  { category: 'Data Stack', items: ['Pandas', 'NumPy', 'SQLite'] },
-  { category: 'Visualisation', items: ['Streamlit', 'Plotly', 'Seaborn', 'Matplotlib'] },
+  { category: 'Data Stack', items: ['Pandas', 'NumPy', 'SQLite', 'Microsoft Excel'] },
+  { category: 'Visualisation', items: ['Streamlit', 'Plotly', 'Seaborn', 'Matplotlib', 'Power BI'] },
   { category: 'MLOps & Deployment', items: ['Docker', 'FastAPI', 'PostgreSQL', 'Streamlit Cloud', 'HuggingFace Spaces', 'Vercel'] },
 ];
 
