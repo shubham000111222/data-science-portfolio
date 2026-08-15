@@ -5,6 +5,40 @@ import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
 const projects = [
   {
+    title: 'IPL Analytics (2008–2024)',
+    emoji: '📊',
+    problem:
+      'Cricket franchises and analysts lack open tools for deep statistical analysis — player performance, team strategy, and win factors remain buried in raw ball-by-ball data.',
+    approach:
+      'Analysed 300K+ IPL deliveries using 20+ SQL window function queries (CTEs, ROW_NUMBER, LAG). Built KMeans clustering for player profiling, logistic regression win-probability model, and 20 visualisations covering phase-wise performance, matchup matrices, and toss strategy trends.',
+    stack: ['Python', 'SQL', 'SQLite', 'Pandas', 'Scikit-learn', 'Matplotlib', 'Seaborn', 'Streamlit'],
+    results: [
+      '✓ 20+ SQL queries: Orange Cap race, death over specialists, H2H win matrix',
+      '✓ KMeans clustering classifies batsmen as Anchors (Dhoni, Gambhir) vs Aggressors (Kohli, Rohit)',
+      '✓ Win probability model: 64.7% accuracy — top feature: powerplay wickets lost',
+      '✓ 8-page Streamlit dashboard: player comparison, match simulator, rivalry deep-dive',
+    ],
+    github: 'https://github.com/shubham000111222/IPL-analytics',
+    demo: 'https://ipl-analytics-btw4n5hcm5n6q8whulymxe.streamlit.app',
+  },
+  {
+    title: 'Real-Time Sales Analytics Dashboard',
+    emoji: '📊',
+    problem:
+      'Sales teams often rely on stale daily reports — a live dashboard enables faster, data-driven decisions.',
+    approach:
+      'Built an end-to-end pipeline: a simulated live transaction stream feeds a FastAPI backend persisting to PostgreSQL. A Streamlit dashboard renders live KPIs, regional heatmaps, product leaderboards, and a Prophet/ARIMA revenue forecast — auto-refreshing every 30 seconds.',
+    stack: ['Python', 'FastAPI', 'PostgreSQL', 'Streamlit', 'Plotly', 'Seaborn', 'Prophet', 'ARIMA', 'Docker'],
+    results: [
+      'Simulated live data stream at 2 TPS (Kafka-ready architecture)',
+      'Prophet & ARIMA 30-day revenue forecast with 90% CI',
+      'Region × Category heatmap for drill-down analysis',
+      'One-click CSV export up to 100K rows',
+    ],
+    github: 'https://github.com/shubham000111222/real-time-sales-dashboard',
+    demo: 'https://real-time-sales-dashboard-rxhjichtxwswzwqgn7pncb.streamlit.app/',
+  },
+  {
     title: 'Stock Portfolio Analytics Dashboard',
     emoji: '📈',
     problem:
@@ -37,23 +71,6 @@ const projects = [
     ],
     github: 'https://github.com/shubham000111222/telco-churn-prediction',
     demo: 'https://telco-churn-prediction-nzpu7s6k2r6mspjzcbahj9.streamlit.app/',
-  },
-  {
-    title: 'IPL Analytics (2008–2024)',
-    emoji: '📊',
-    problem:
-      'Cricket franchises and analysts lack open tools for deep statistical analysis — player performance, team strategy, and win factors remain buried in raw ball-by-ball data.',
-    approach:
-      'Analysed 300K+ IPL deliveries using 20+ SQL window function queries (CTEs, ROW_NUMBER, LAG). Built KMeans clustering for player profiling, logistic regression win-probability model, and 20 visualisations covering phase-wise performance, matchup matrices, and toss strategy trends.',
-    stack: ['Python', 'SQL', 'SQLite', 'Pandas', 'Scikit-learn', 'Matplotlib', 'Seaborn', 'Streamlit'],
-    results: [
-      '✓ 20+ SQL queries: Orange Cap race, death over specialists, H2H win matrix',
-      '✓ KMeans clustering classifies batsmen as Anchors (Dhoni, Gambhir) vs Aggressors (Kohli, Rohit)',
-      '✓ Win probability model: 64.7% accuracy — top feature: powerplay wickets lost',
-      '✓ 8-page Streamlit dashboard: player comparison, match simulator, rivalry deep-dive',
-    ],
-    github: 'https://github.com/shubham000111222/IPL-analytics',
-    demo: 'https://ipl-analytics-btw4n5hcm5n6q8whulymxe.streamlit.app',
   },
   {
     title: 'NLP-Powered Financial Sentiment Analyser',
@@ -105,23 +122,6 @@ const projects = [
     ],
     github: 'https://github.com/shubham000111222/medical-classifier',
     demo: 'https://medical-classifier-nxsgzc3dekbyqef8kvc8w6.streamlit.app/',
-  },
-  {
-    title: 'Real-Time Sales Analytics Dashboard',
-    emoji: '📊',
-    problem:
-      'Sales teams often rely on stale daily reports — a live dashboard enables faster, data-driven decisions.',
-    approach:
-      'Built an end-to-end pipeline: a simulated live transaction stream feeds a FastAPI backend persisting to PostgreSQL. A Streamlit dashboard renders live KPIs, regional heatmaps, product leaderboards, and a Prophet/ARIMA revenue forecast — auto-refreshing every 30 seconds.',
-    stack: ['Python', 'FastAPI', 'PostgreSQL', 'Streamlit', 'Plotly', 'Seaborn', 'Prophet', 'ARIMA', 'Docker'],
-    results: [
-      'Simulated live data stream at 2 TPS (Kafka-ready architecture)',
-      'Prophet & ARIMA 30-day revenue forecast with 90% CI',
-      'Region × Category heatmap for drill-down analysis',
-      'One-click CSV export up to 100K rows',
-    ],
-    github: 'https://github.com/shubham000111222/real-time-sales-dashboard',
-    demo: 'https://real-time-sales-dashboard-rxhjichtxwswzwqgn7pncb.streamlit.app/',
   },
   {
     title: 'ResumeRank AI — Resume Screening System',
